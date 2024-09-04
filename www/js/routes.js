@@ -66,15 +66,15 @@ var app = new Framework7({
       breakpoints: {
         50:{
           slidesPerView: 3,
-          spaceBetween: 30
+          spaceBetween: 20
         },
         640: {
-          slidesPerView: 8,
-          spaceBetween: 30
+          slidesPerView: 6,
+          spaceBetween: 10
         },
         1200: {
-          slidesPerView: 12,
-          spaceBetween: 30
+          slidesPerView: 10,
+          spaceBetween: 10
         }
       },
     });

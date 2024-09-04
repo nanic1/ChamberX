@@ -103,7 +103,7 @@ a {
 form {
     padding-top: 10px;
     background: var(--branco);
-    padding-bottom: 20px;
+    padding-bottom: 1px;
     position: relative;
 }
 
@@ -112,8 +112,9 @@ input[type="text"] {
     background: var(--gelo);
     height: 45px;
     border-radius: 10px;
-    padding: 10px 20px;
-    margin: auto;
+    padding: 5px 1px;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 ::placeholder {
@@ -131,6 +132,7 @@ input[type="text"] {
 .swiper {
     width: 100%;
     height: 100%;
+    margin-top: 5px;
   }
 
   .swiper-slide {
@@ -154,12 +156,14 @@ input[type="text"] {
   }
 
   .filter-btn {
+    font-size: 14px;
     width: 100%;
-    height: 35px;
+    height: 30px;
     background: none;
     border: 2px solid var(--preto);
-    border-radius: 10px;
+    border-radius: 12px;
     white-space: nowrap;
+    margin-bottom: 60px;
   }
 
   .row {
@@ -176,18 +180,58 @@ input[type="text"] {
     flex-wrap: nowrap;
     flex-direction: column;
     height: 300px;
-    border: 1px solid red;
     flex: 45%;
     margin-right: 5px;
-    margin-bottom: 5px;
+    margin-bottom: 15px;
   }
 
   .img-container {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: nowrap;
     width: 100%;
-    height: 100%;
+    height: 200px;
     border-radius: 10px;
     background: var(--gelo);
+    object-fit: contain;
+  }
+
+  .img-container img {
+    max-width: 220px;
+    object-fit: cover;
+  }
+
+  .color-gray {
+    color: gray
+  }
+
+  .nome-rating {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+  }
+
+  .mdi-star {
+    color: orange
+  }
+
+  .bold {
+    font-weight: 800;
+  }
+
+  .price {
+    font-size: 15px;
+  }
+
+  @media (min-width:992px){
+    .item-card{
+        flex: 30%;
+    }
+  }
+
+  @media (min-width:1200px){
+    .item-card{
+        flex: 20%;
+    }
   }
